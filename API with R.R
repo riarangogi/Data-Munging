@@ -14,6 +14,12 @@ myapp<-oauth_app("profiles",key = '5c576e360156527b85f9',
 #The arguments are appname,client id y client secret respectly, we get these 
 #when we create the app in the API
 
+github_token <- oauth2.0_token(oauth_endpoints("github"), myapp,
+                               cache = FALSE) #very important cache=false
+#FALSE means don't cache
+#Get OAuth credentials
 gtoken <- config(token = github_token)
-req <- GET("https://api.github.com/users/jtleek/repos", gtoken)
+req <- GET("https://github.com/rasbt", gtoken)
 #we save in req the code from url
+stop_for_status(req)
+req<-content(req)
