@@ -23,4 +23,4 @@ req <- GET("https://github.com/rasbt", gtoken)
 #we save in req the code from url
 stop_for_status(req)
 req<-content(req)
-#Important: The code is in html format.
+#Important: The code is in xml format.
