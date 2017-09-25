@@ -24,3 +24,6 @@ req <- GET("https://github.com/rasbt", gtoken)
 stop_for_status(req)
 req<-content(req)
 #Important: The code is in xml format.
+
+
+#Guide to enter the facebook API with Rfacebook packages
