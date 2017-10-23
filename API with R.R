@@ -1,3 +1,4 @@
+library(Rfacebook)#previously this package should be installed
 library(httr)#previously this package should be installed
 
 
@@ -26,4 +27,4 @@ req<-content(req)
 #Important: The code is in xml format.
 
 
-#Guide to enter the facebook API with Rfacebook packages
+##Guide to enter the facebook API with Rfacebook packages
