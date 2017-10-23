@@ -29,12 +29,14 @@ req<-content(req)
 
 ##Guide to enter the facebook API with Rfacebook packages
 
-app_id<-'143231016299300'
-app_secret<-'75a5619490249f09995267da0ca46e59'
-#token<-'8AyWu4xXlPnOjOzGCBI8zq2XD-g'
+app_id<-'497827420597347'
+app_secret<-'8352c830c1d73f97c5f0593ead4fb29a'
 #We get this information from app
 
 token<-fbOAuth(app_id = app_id,app_secret = app_secret)
 #go to the app, click in add product, click in  login
 # and we paste http://localhost:1410/ in URL..
 
+post_page_bpp<-getPage('BibliotecaPublicaPiloto',token = token,n=50)
+#we get the post information from bpp page and save in
+#post_page_bpp variable
