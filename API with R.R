@@ -28,3 +28,13 @@ req<-content(req)
 
 
 ##Guide to enter the facebook API with Rfacebook packages
+
+app_id<-'143231016299300'
+app_secret<-'75a5619490249f09995267da0ca46e59'
+#token<-'8AyWu4xXlPnOjOzGCBI8zq2XD-g'
+#We get this information from app
+
+token<-fbOAuth(app_id = app_id,app_secret = app_secret)
+#go to the app, click in add product, click in  login
+# and we paste http://localhost:1410/ in URL..
+
