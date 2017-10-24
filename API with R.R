@@ -1,3 +1,4 @@
+library(twitteR)#previously this package should be installed
 library(Rfacebook)#previously this package should be installed
 library(httr)#previously this package should be installed
 
@@ -40,3 +41,6 @@ token<-fbOAuth(app_id = app_id,app_secret = app_secret)
 post_page_bpp<-getPage('BibliotecaPublicaPiloto',token = token,n=50)
 #we get the post information from bpp page and save in
 #post_page_bpp variable
+
+
+##Guide to enter the twitter API with twitteR packages
