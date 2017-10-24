@@ -1,3 +1,4 @@
+library(RCurl)#previously this package should be installed
 library(twitteR)#previously this package should be installed
 library(Rfacebook)#previously this package should be installed
 library(httr)#previously this package should be installed
@@ -44,3 +45,11 @@ post_page_bpp<-getPage('BibliotecaPublicaPiloto',token = token,n=50)
 
 
 ##Guide to enter the twitter API with twitteR packages
+
+api_key <-'Qgz8aMN94Lbx22FYzpZUM6OvS'
+api_secret <-'JOFl64xIbGcajBbnsYRpr4Sf1TPfBDlLx9FwbjRipViL0H2m0L'
+access_token <-'831699805583863808-hity6rLSWqcBixeC5qQsO4x85xc7wTh'
+access_token_secret <-'Ux4bebOxzVPVRm93tqdBM4zWQgwl1fQJEnUyZwKYMBdXv'
+#We get this information from app
+
+setup_twitter_oauth(api_key,api_secret,access_token,access_token_secret)
