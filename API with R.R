@@ -53,3 +53,7 @@ access_token_secret <-'Ux4bebOxzVPVRm93tqdBM4zWQgwl1fQJEnUyZwKYMBdXv'
 #We get this information from app
 
 setup_twitter_oauth(api_key,api_secret,access_token,access_token_secret)
+#Is very important that we select the 2 option
+
+tweets<-userTimeline('carobolivar17',n=30)
+#we saved the tweets of @carobolivar 17 in tweets variable
