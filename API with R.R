@@ -68,3 +68,5 @@ client_secret<-'RJ5QvBLpqivBCLVJv6AbxWFf'
 
 token<-Auth(client.id = client_id,client.secret = client_secret)
 #we paste http://localhost:1410/ in URL of redirect..
+
+ValidateToken(token)
