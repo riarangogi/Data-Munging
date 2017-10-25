@@ -60,4 +60,11 @@ tweets<-userTimeline('carobolivar17',n=30)
 #we saved the tweets of @carobolivar 17 in tweets variable
 
 
-##Guide to enter the google API with RGoogleAnalityucs packages
+##Guide to enter the google API with RGoogleAnalytics packages
+
+client_id<-(
+'945826807451-trhck9kjcdjrkokabn1k14bivujap92u.apps.googleusercontent.com')
+client_secret<-'RJ5QvBLpqivBCLVJv6AbxWFf'
+
+token<-Auth(client.id = client_id,client.secret = client_secret)
+#we paste http://localhost:1410/ in URL of redirect..
