@@ -1,3 +1,4 @@
+library(RGoogleAnalytics)#previously this package should be installed
 library(RCurl)#previously this package should be installed
 library(twitteR)#previously this package should be installed
 library(Rfacebook)#previously this package should be installed
@@ -57,3 +58,6 @@ setup_twitter_oauth(api_key,api_secret,access_token,access_token_secret)
 
 tweets<-userTimeline('carobolivar17',n=30)
 #we saved the tweets of @carobolivar 17 in tweets variable
+
+
+##Guide to enter the google API with RGoogleAnalityucs packages
